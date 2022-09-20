@@ -5,21 +5,21 @@
 class Fjira < Formula
   desc ""
   homepage "https://github.com/mk-5/fjira"
-  version "0.7.2"
+  version "0.7.3"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mk-5/fjira/releases/download/0.7.2/fjira_0.7.2_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "716566f294a90b801ece311ae4633a35d97db388b416dc29800825e050bd7151"
+      url "https://github.com/mk-5/fjira/releases/download/0.7.3/fjira_0.7.3_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "cb8cb9211674f3406ae7c83ab5695e9c663d486f1705888246a7a5fd5f191add"
 
       def install
         bin.install "fjira"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mk-5/fjira/releases/download/0.7.2/fjira_0.7.2_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "a419a140d310ccc7ae850f08f7ff24f465825788d08a95504f510cfe45b54960"
+      url "https://github.com/mk-5/fjira/releases/download/0.7.3/fjira_0.7.3_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "79afc990b1393b5c1e6cf63941c2dca85f989656f6c8f55b177ed4217e318c97"
 
       def install
         bin.install "fjira"
@@ -29,16 +29,16 @@ class Fjira < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mk-5/fjira/releases/download/0.7.2/fjira_0.7.2_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "ff87400f8f39fe19893acad795cebbe05de98d2bc43c82313953a2d3806c892c"
+      url "https://github.com/mk-5/fjira/releases/download/0.7.3/fjira_0.7.3_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "3d974e71da025953e442f817f18a77b98b0697f3527b6e46285b89e301272edc"
 
       def install
         bin.install "fjira"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mk-5/fjira/releases/download/0.7.2/fjira_0.7.2_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "9064b129aa82a659e18c314367f52497d71ce13333b824d9426fb79729480dcd"
+      url "https://github.com/mk-5/fjira/releases/download/0.7.3/fjira_0.7.3_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "a6bda7ed952772c6679175bc0b7753849790cfdb25850b6a12069db1514b1376"
 
       def install
         bin.install "fjira"
