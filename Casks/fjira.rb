@@ -3,7 +3,7 @@ cask "fjira" do
   name "fjira"
   desc ""
   homepage "https://github.com/mk-5/fjira"
-  version "1.4.7"
+  version "1.4.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "fjira" do
   on_macos do
     on_intel do
       url "https://github.com/mk-5/fjira/releases/download/#{version}/fjira_Darwin_x86_64.tar.gz"
-      sha256 "620cde5919f156fdf1d1c2d57f98fb827f5ad5acf3a3318ac468a3230e23b9f2"
+      sha256 "29d9de637e5a83cca820cdc595e82f196f3416fa9d2ff62c76033e0d4e0f4695"
     end
     on_arm do
       url "https://github.com/mk-5/fjira/releases/download/#{version}/fjira_Darwin_arm64.tar.gz"
-      sha256 "c97ead965a5c5a69fb129017414f1816b1299b559ad16c8a9ec00cf4bf40765c"
+      sha256 "a24d48081ff950eb065fa12a3bb6368028890cb243fdf51008d6858dfb73e542"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/mk-5/fjira/releases/download/#{version}/fjira_Linux_x86_64.tar.gz"
-      sha256 "893d7e75bcff48bb59e585f76b649883e7e96176e86fa314dfb90336f5a75ed1"
+      sha256 "afeb7339b53475396c69b2ef9baabd78ac4b3693eee11c2da4ec74d728148da6"
     end
     on_arm do
       url "https://github.com/mk-5/fjira/releases/download/#{version}/fjira_Linux_arm64.tar.gz"
-      sha256 "4bae3bbd5b10d09256de142e551c41fd5d7d5a3723f965b2774b123f2104ea07"
+      sha256 "06d964283be40d7ded1d6e80e85b9a760926d45a136c04e649ec15d3d1e3033e"
     end
   end
 
